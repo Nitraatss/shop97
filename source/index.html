@@ -22,17 +22,19 @@
 
   <body>
     <header class="main-header">
-      <div class="main-header__wrapper">
-        <div class="main-header__top">
+      <div class="main-header__top">
+        <div class="main-header__top-wrapper">
           <ul class="main-header__social social">
             <li class="social__item">
-              <a class="social__link social__link--vk"> Vkontakte </a>
+              <a class="social__link social__link--vk" href="#"> Vkontakte </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--fb"> Facebook </a>
+              <a class="social__link social__link--fb" href="#"> Facebook </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--inst"> Instagram </a>
+              <a class="social__link social__link--inst" href="#">
+                Instagram
+              </a>
             </li>
           </ul>
 
@@ -49,8 +51,9 @@
             8 800 342-08-80
           </a>
         </div>
-
-        <div class="main-header__bottom">
+      </div>
+      <div class="main-header__bottom">
+        <div class="main-header__bottom-wrapper">
           <div class="main-header__togglers">
             <button class="main-header__toggler" type="button">Мужчинам</button>
             <button
@@ -61,21 +64,35 @@
             </button>
           </div>
           <div class="main-header__logo">
-            <img
-              src="./img/site-logo.png"
-              width="163"
-              height="90"
-              alt="Логотип сайта"
-            />
-          </div>
-          <a class="main-header__search" href="#"> Поиск </a>
-          <a class="main-header__bag" href="#"> Корзина </a>
-        </div>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="./img/site-logo.webp 1x, ./img/site-logo.webp 2x"
+              />
 
-        <nav class="main-header__navigation navigation">
+              <img
+                class="main-header__logo-image"
+                src="./img/site-logo.png"
+                srcset="./img/site-logo.png 2x"
+                width="141"
+                height="60"
+                alt="Логотип сайта"
+              />
+            </picture>
+          </div>
+          <div class="main-header__bottom-links">
+            <a class="main-header__search" href="#"> Поиск </a>
+            <a class="main-header__bag" href="#">
+              Корзина <span class="main-header__items-number">2</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <nav class="main-header__navigation navigation">
+        <div class="navigation__wrapper">
           <div class="navigation__column navigation__column--category">
             <p class="navigation__column-title">Категории</p>
-            <div class="navigation__wrapper">
+            <div class="navigation__subwrapper">
               <ul class="navigation__list">
                 <li class="navigation__item">
                   <a
@@ -154,9 +171,9 @@
               </ul>
             </div>
           </div>
-          <div class="navigation__column navigation__column--category">
+          <div class="navigation__column navigation__column--brands">
             <p class="navigation__column-title">Брэнды</p>
-            <div class="navigation__wrapper">
+            <div class="navigation__subwrapper">
               <ul class="navigation__list">
                 <li class="navigation__item">
                   <a href="#" class="navigation__link">Baldini</a>
@@ -208,19 +225,28 @@
                   <a href="#" class="navigation__link">PRUDA</a>
                 </li>
               </ul>
-              <div class="navigation__stock">
-                <img
-                  src="./igm/menu-stock.png"
-                  width="187"
-                  height="180"
-                  alt="Акция"
-                />
-                <a class="navigation__stock-link" href="#">Акции</a>
-              </div>
             </div>
           </div>
-        </nav>
-      </div>
+          <div class="navigation__stock">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="./img/menu-stock.webp 1x, ./img/menu-stock.webp 2x"
+              />
+
+              <img
+                class="main-header__stock-image"
+                src="./img/menu-stock.png"
+                srcset="./img/menu-stock.png 2x"
+                width="187"
+                height="180"
+                alt="Акция"
+              />
+            </picture>
+            <a class="navigation__stock-link" href="#">Акции</a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main class="main-content">
@@ -904,6 +930,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="./assets/object-fit-polyfill/ofi.min.js"></script>
+    <script src="./assets/picture-polyfill/picturefill.min.js"></script>
     <script src="./js/index.min.js"></script>
   </body>
 </html>
