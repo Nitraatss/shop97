@@ -302,8 +302,8 @@
     flex-wrap: wrap;
     max-width: 100%;
     padding-right: 95px;
-    padding-left: 95px;
     padding-bottom: 94px;
+    padding-left: 95px;
   }
 
   .navigation__column {
@@ -393,25 +393,27 @@
 
   .navigation__column-title {
     margin: 0;
-    padding-left: 150px;
-    padding-right: 48px;
     margin-bottom: 30px;
+    padding-right: 48px;
     padding-bottom: 23px;
+    padding-left: 150px;
+
     border-bottom: 1px solid #eef0f0;
   }
 
   .navigation__list {
     max-width: 100%;
-    padding-left: 78px;
     padding-right: 48px;
     padding-bottom: 0;
+    padding-left: 78px;
   }
 
   .navigation__item {
-    padding-left: 71px;
     margin: 0;
     padding-top: 12.5px;
     padding-bottom: 12.5px;
+    padding-left: 71px;
+
     border-left: 1px solid #eef0f0;
   }
 
