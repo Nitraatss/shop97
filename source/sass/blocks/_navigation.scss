@@ -384,36 +384,35 @@
   .navigation__column {
     width: 100%;
     max-width: 100%;
-    border-bottom: 1px solid #eef0f0;
+    margin-bottom: 48px;
 
     &--category {
-      margin-bottom: 23px;
-
-      .navigation__list {
-        min-width: 0;
-        border-right: 0;
-      }
+      display: none;
     }
   }
 
   .navigation__column-title {
     margin: 0;
-    padding-left: 78px;
-    padding-right: 78px;
+    padding-left: 150px;
+    padding-right: 48px;
     margin-bottom: 30px;
     padding-bottom: 23px;
     border-bottom: 1px solid #eef0f0;
-    text-align: center;
   }
 
   .navigation__list {
     max-width: 100%;
-    padding-right: 0;
+    padding-left: 78px;
+    padding-right: 48px;
+    padding-bottom: 0;
   }
 
   .navigation__item {
-    padding: 0 78px;
-    justify-content: center;
+    padding-left: 71px;
+    margin: 0;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    border-left: 1px solid #eef0f0;
   }
 
   .navigation__arrow {
