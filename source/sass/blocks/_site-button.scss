@@ -1,0 +1,27 @@
+.site-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  max-width: 100%;
+  min-height: 45px;
+
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  color: #654e3d;
+  word-wrap: break-word;
+
+  background-color: $site-color;
+  border-radius: 3px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+}
