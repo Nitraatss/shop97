@@ -85,14 +85,6 @@
   word-wrap: break-word;
 }
 
-.navigation__subwrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-}
-
 .navigation__list {
   display: block;
   margin: 0;
@@ -322,14 +314,14 @@
   }
 
   .navigation__column {
-    width: 100%;
-    max-width: 50%;
     padding-bottom: 0;
 
     &--category {
-      margin-right: 0;
+      flex-basis: 206px;
+      margin-right: 73px;
 
       border-right: 0;
+
       .navigation__column-title {
         &::after {
           display: none;
@@ -337,35 +329,42 @@
       }
 
       .navigation__list {
-        min-width: 206px;
-
         border-right: 1px solid #eef0f0;
       }
     }
 
     &--brands {
-      .navigation__link {
-        font-size: 14px;
-      }
+      flex-basis: 298px;
     }
   }
 
   .navigation__column-title {
-    margin-bottom: 58px;
+    margin-bottom: 44px;
     padding: 0;
   }
 
   .navigation__list {
-    width: 100%;
-    min-width: 113px;
-    max-width: 50%;
     padding-bottom: 25px;
+
+    &--category {
+      width: 100%;
+      max-width: 100%;
+      column-count: 1;
+    }
+
+    &--brands {
+      column-gap: 76px;
+      column-width: 93px;
+      column-count: 2;
+    }
   }
 
   .navigation__link {
     color: black;
 
     &--with-icon {
+      padding-left: 36px;
+
       &::before {
         opacity: 1;
       }
@@ -373,8 +372,14 @@
   }
 
   .navigation__stock {
+    margin-top: 44px;
     width: 100%;
     max-width: 100%;
+  }
+
+  .navigation__arrow {
+    right: -23px;
+    bottom: 24px;
   }
 }
 
@@ -389,7 +394,7 @@
 
   .navigation__wrapper {
     padding: 0;
-    padding-top: 24px;
+    padding-top: 22px;
 
     &::before {
       display: none;
@@ -399,20 +404,25 @@
   .navigation__column {
     width: 100%;
     max-width: 100%;
-    margin-bottom: 48px;
+    margin-bottom: 52px;
 
     &--category {
       display: none;
+    }
+
+    &--brands {
+      flex-basis: 100%;
     }
   }
 
   .navigation__column-title {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 7px;
     padding-right: 48px;
     padding-bottom: 23px;
     padding-left: 150px;
-
+    width: 100%;
+    max-width: 100%;
     border-bottom: 1px solid #eef0f0;
   }
 
@@ -421,6 +431,10 @@
     padding-right: 48px;
     padding-bottom: 0;
     padding-left: 78px;
+
+    &--brands {
+      column-count: 1;
+    }
   }
 
   .navigation__item {
@@ -434,5 +448,9 @@
 
   .navigation__arrow {
     display: none;
+  }
+
+  .navigation__stock {
+    margin-top: 0;
   }
 }
