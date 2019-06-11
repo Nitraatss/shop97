@@ -39,9 +39,10 @@
 }
 
 .navigation__column {
-  padding-bottom: 25px;
+  padding-bottom: 12px;
 
   &--category {
+    flex-basis: 338px;
     margin-right: 44px;
 
     border-right: 1px solid #eef0f0;
@@ -74,7 +75,7 @@
 
 .navigation__column-title {
   max-width: 100%;
-  padding-bottom: 58px;
+  padding-bottom: 44px;
 
   font-weight: 700;
   font-size: 15px;
@@ -94,12 +95,26 @@
 
 .navigation__list {
   display: block;
-  min-width: 170px;
   margin: 0;
   padding: 0;
+  padding-top: 12px;
   padding-right: 5px;
 
   list-style: none;
+  column-gap: 22px;
+  column-width: 150px;
+
+  &--category {
+    column-count: 2;
+  }
+
+  &--brands {
+    column-count: 3;
+
+    .navigation__link {
+      font-size: 14px;
+    }
+  }
 }
 
 .navigation__item {
