@@ -1,0 +1,33 @@
+.intro-block {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 48px;
+}
+
+.intro-block__title {
+  max-width: 100%;
+  margin: 0;
+  margin-bottom: 13px;
+
+  font-size: 40px;
+  line-height: 50px;
+  font-family: $secondary-font;
+  text-align: center;
+  color: $site-color;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  word-wrap: break-word;
+}
+
+.intro-block__description {
+  max-width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #1c1c2a;
+  letter-spacing: 0.2px;
+  word-wrap: break-word;
+}

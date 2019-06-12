@@ -1,0 +1,18 @@
+.stocks {
+  width: 100%;
+  max-width: 100%;
+}
+
+.stocks__wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stocks__single-collection {
+  margin-bottom: 30px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}

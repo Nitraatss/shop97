@@ -3,8 +3,12 @@
 @import "sanitize.scss";
 @import "global.scss";
 
+@import "./blocks/intro-block.scss";
 @import "./blocks/site-button.scss";
 @import "./blocks/social.scss";
 @import "./blocks/navigation.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/top-offers.scss";
+@import "./blocks/collections.scss";
+@import "./blocks/stocks.scss";
+@import "./blocks/single-collection.scss";
