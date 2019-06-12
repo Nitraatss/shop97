@@ -6,7 +6,7 @@
 
 .intro-block__title {
   max-width: 100%;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 13px;
 
   font-size: 40px;
@@ -30,4 +30,23 @@
   color: #1c1c2a;
   letter-spacing: 0.2px;
   word-wrap: break-word;
+}
+
+@media screen and (max-width: $tablet-width) {
+  .intro-block {
+    margin-bottom: 30px;
+  }
+  .intro-block__title {
+    max-width: 298px;
+
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .intro-block__description {
+    max-width: 298px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

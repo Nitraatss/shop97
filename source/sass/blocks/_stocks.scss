@@ -23,3 +23,13 @@
     padding: 0 22px;
   }
 }
+
+@media screen and (max-width: $tablet-width) {
+  .stocks {
+    margin-bottom: 0;
+  }
+
+  .stocks__wrapper {
+    padding: 0;
+  }
+}

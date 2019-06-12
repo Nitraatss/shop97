@@ -311,6 +311,10 @@
 }
 
 @media screen and (max-width: $tablet-width) {
+  .top-offers {
+    margin-bottom: 54px;
+  }
+
   .top-offers__wrapper {
     padding: 0;
   }

@@ -24,3 +24,13 @@
     padding: 0 22px;
   }
 }
+
+@media screen and (max-width: $tablet-width) {
+  .collections {
+    margin-bottom: 0;
+  }
+
+  .collections__wrapper {
+    padding: 0;
+  }
+}
