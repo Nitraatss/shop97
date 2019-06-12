@@ -16,3 +16,10 @@
     margin-bottom: 0;
   }
 }
+
+@media screen and (max-width: $desktop-width) {
+  .stocks__wrapper {
+    max-width: 100%;
+    padding: 0 22px;
+  }
+}
