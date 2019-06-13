@@ -40,6 +40,10 @@
 @media screen and (max-width: $tablet-width) {
   .collections {
     margin-bottom: 0;
+
+    &--stocks {
+      margin-bottom: 46px;
+    }
   }
 
   .collections__wrapper {

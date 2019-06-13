@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   width: 100%;
   max-width: 100%;
@@ -28,12 +28,11 @@
 
 .brands__link {
   display: block;
+  height: 80px;
   margin: 0;
   margin-right: 30px;
-  height: 80px;
 
   opacity: 0.5;
-  flex-grow: 1;
 
   &:last-of-type {
     margin: 0;
@@ -87,16 +86,39 @@
 }
 
 @media screen and (max-width: $desktop-width) {
+  .brands__wrapper {
+    max-width: 100%;
+    padding: 0 22px;
+  }
+
   .brands__slide {
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   .brands__link {
+    flex-grow: 0;
     height: 38px;
+    margin-bottom: 21px;
     padding-top: 0;
     padding-bottom: 0;
-    margin-bottom: 21px;
-    flex-grow: 0;
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .brands__wrapper {
+    padding: 0 11px;
+  }
+
+  .brands__link {
+    margin-right: 0;
+    margin-bottom: 12px;
+
+    &--medium {
+      flex-basis: 126px;
+    }
+
+    &--big {
+      flex-basis: 172px;
+    }
   }
 }

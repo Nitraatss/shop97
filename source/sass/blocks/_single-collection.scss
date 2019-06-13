@@ -132,6 +132,8 @@
 }
 
 .single-collection__item-value {
+  display: block;
+
   font-weight: 400;
 }
 
@@ -238,6 +240,8 @@
 
 @media screen and (max-width: $tablet-width) {
   .single-collection {
+    margin-bottom: 0;
+
     > * {
       margin-bottom: 0;
     }
@@ -270,5 +274,9 @@
   .single-collection__item {
     flex-basis: 100%;
     margin: 0 11px;
+  }
+
+  .single-collection__item-value {
+    text-align: center;
   }
 }
