@@ -1,0 +1,39 @@
+.bullets {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.bullets__button {
+  width: 5px;
+  height: 5px;
+  margin: 0;
+  margin: 0 9px;
+  padding: 0;
+
+  font-size: 0;
+
+  background-color: black;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.2;
+
+  &--active {
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+}

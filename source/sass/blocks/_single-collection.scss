@@ -16,9 +16,11 @@
       margin-right: 0;
       margin-left: 30px;
 
-      &--stock {
-        margin-right: 15px;
-        margin-left: 30px;
+      &.collection-theme {
+        &--stock {
+          margin-right: 15px;
+          margin-left: 30px;
+        }
       }
     }
 
@@ -31,9 +33,11 @@
 .single-collection__collection-theme {
   margin-right: 30px;
 
-  &--stock {
-    margin-right: 30px;
-    margin-left: 15px;
+  &.collection-theme {
+    &--stock {
+      margin-right: 30px;
+      margin-left: 15px;
+    }
   }
 }
 
@@ -169,7 +173,7 @@
 @media screen and (max-width: $desktop-width) {
   .single-collection {
     flex-wrap: wrap;
-    margin-bottom: 0;
+    margin-bottom: 14px;
     padding: 0;
 
     > * {
@@ -178,25 +182,53 @@
 
     &:nth-of-type(1) {
       .single-collection__item:nth-of-type(2) {
-        flex-basis: 320px;
+        flex-basis: 310px;
       }
     }
 
     &:nth-of-type(2) {
       .single-collection__item:last-of-type {
-        flex-basis: 320px;
+        flex-basis: 310px;
       }
 
       .single-collection__collection-theme {
         margin-right: 0;
-        margin-left: 20px;
+        margin-left: 30px;
+
+        &.collection-theme {
+          &--stock {
+            margin-right: 0;
+            margin-left: 18px;
+          }
+        }
+      }
+    }
+
+    &--stock {
+      &:nth-of-type(1) {
+        .single-collection__item:nth-of-type(2) {
+          flex-basis: 334px;
+        }
+      }
+
+      &:nth-of-type(2) {
+        .single-collection__item:last-of-type {
+          flex-basis: 334px;
+        }
       }
     }
   }
 
   .single-collection__collection-theme {
-    margin-right: 20px;
+    margin-right: 30px;
     margin-left: 0;
+
+    &.collection-theme {
+      &--stock {
+        margin-right: 18px;
+        margin-left: 0;
+      }
+    }
   }
 
   .single-collection__item {
@@ -214,6 +246,12 @@
       .single-collection__collection-theme {
         order: 0;
         margin-left: 0;
+
+        &.collection-theme {
+          &--stock {
+            margin-left: 0;
+          }
+        }
       }
     }
   }
@@ -221,6 +259,12 @@
   .single-collection__collection-theme {
     margin-right: 0;
     margin-bottom: 10px;
+
+    &.collection-theme {
+      &--stock {
+        margin-right: 0;
+      }
+    }
   }
 
   .single-collection__item {

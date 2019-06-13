@@ -447,7 +447,7 @@
             </p>
           </div>
 
-          <section class="collections__single-collection single-collection">
+          <section class="collections__single-collection single-collection single-collection--stock">
             <div class="single-collection__collection-theme collection-theme collection-theme--stock">
               <div class="collection-theme__stock">
                 <div class="collection-theme__stock-info">
@@ -540,7 +540,7 @@
             </div>
           </section>
 
-          <section class="collections__single-collection single-collection">
+          <section class="collections__single-collection single-collection single-collection--stock">
             <div class="single-collection__collection-theme collection-theme collection-theme--stock">
               <div class="collection-theme__stock">
                 <div class="collection-theme__stock-info">
@@ -634,21 +634,55 @@
         <div class="brands__wrapper">
           <div class="brands__slider">
             <div class="brands__slide">
-              <img class="brands__image" src="./img/partner-1.jpg" alt="Брэнд" width="124" height="31">
+              <a class="brands__link brands__link--medium" href="#">
+                <picture>
+                  <source type="image/webp" srcset="./img/partner-1.webp 1x, ./img/partner-1.webp 2x">
 
-              <img class="brands__image" src="./img/partner-2.jpg" alt="Брэнд" width="124" height="31">
+                  <img class="brands__image" src="./img/partner-1.jpg.png" srcset="./img/partner-1.jpg 2x" width="124" height="31" alt="Брэнд">
+                </picture>
+              </a>
+              <a class="brands__link brands__link--big" href="#">
+                <picture>
+                  <source type="image/webp" srcset="./img/partner-2.webp 1x, ./img/partner-2.webp 2x">
 
-              <img class="brands__image" src="./img/partner-3.jpg" alt="Брэнд" width="124" height="31">
+                  <img class="brands__image" src="./img/partner-2.jpg.png" srcset="./img/partner-2.jpg 2x" width="124" height="31" alt="Брэнд">
+                </picture>
+              </a>
+              <a class="brands__link brands__link--medium" href="#">
+                <picture>
+                  <source type="image/webp" srcset="./img/partner-3.webp 1x, ./img/partner-3.webp 2x">
 
-              <img class="brands__image" src="./img/partner-4.jpg" alt="Брэнд" width="124" height="31">
+                  <img class="brands__image" src="./img/partner-3.jpg.png" srcset="./img/partner-3.jpg 2x" width="124" height="31" alt="Брэнд">
+                </picture>
+              </a>
+              <a class="brands__link brands__link--medium" href="#">
+                <picture>
+                  <source type="image/webp" srcset="./img/partner-4.webp 1x, ./img/partner-4.webp 2x">
 
-              <img class="brands__image" src="./img/partner-5.jpg" alt="Брэнд" width="124" height="31">
-              <img class="brands__image" src="./img/partner-6.jpg" alt="Брэнд" width="124" height="31">
+                  <img class="brands__image" src="./img/partner-4.jpg.png" srcset="./img/partner-4.jpg 2x" width="124" height="31" alt="Брэнд">
+                </picture>
+              </a>
+              <a class="brands__link brands__link--medium" href="#">
+                <picture>
+                  <source type="image/webp" srcset="./img/partner-5.webp 1x, ./img/partner-5.webp 2x">
+
+                  <img class="brands__image" src="./img/partner-5.jpg.png" srcset="./img/partner-5.jpg 2x" width="124" height="31" alt="Брэнд">
+                </picture>
+              </a>
+              <a class="brands__link brands__link--small" href="#">
+                <picture>
+                  <source type="image/webp" srcset="./img/partner-6.webp 1x, ./img/partner-6.webp 2x">
+
+                  <img class="brands__image" src="./img/partner-6.jpg.png" srcset="./img/partner-6.jpg 2x" width="124" height="31" alt="Брэнд">
+                </picture>
+              </a>
             </div>
           </div>
 
           <div class="brands__bullets bullets">
-            <button class="bullets__button" type="button">Перключатель</button>
+            <button class="bullets__button bullets__button--active" type="button">
+              Перключатель
+            </button>
             <button class="bullets__button" type="button">Перключатель</button>
             <button class="bullets__button" type="button">Перключатель</button>
           </div>

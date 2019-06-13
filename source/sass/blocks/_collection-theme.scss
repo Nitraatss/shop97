@@ -133,6 +133,10 @@
   .collection-theme {
     flex-grow: 1;
     flex-basis: 384px;
+
+    &--stock {
+      flex-basis: 372px;
+    }
   }
 }
 
