@@ -30,6 +30,10 @@
   color: #1c1c2a;
   letter-spacing: 0.2px;
   word-wrap: break-word;
+
+  &--stocks {
+    max-width: 400px;
+  }
 }
 
 @media screen and (max-width: $tablet-width) {
