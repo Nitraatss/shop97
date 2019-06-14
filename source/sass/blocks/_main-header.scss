@@ -102,6 +102,8 @@
 
   &::before {
     content: "";
+    position: relative;
+    top: -1px;
 
     display: inline-block;
     width: 14px;
@@ -111,7 +113,7 @@
     background-image: url("../img/icons/phone.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
   }
 }
 

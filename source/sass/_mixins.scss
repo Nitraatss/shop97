@@ -10,3 +10,19 @@
     font-family: "object-fit: #{$fit}";
   }
 }
+
+@mixin with-arrow {
+  &::after {
+    content: "";
+
+    display: inline-block;
+    width: 25px;
+    height: 8px;
+    margin-left: 4px;
+
+    background-image: url("../img/icons/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}

@@ -129,19 +129,7 @@
 .single-collection__details-link {
   display: block;
 
-  &::after {
-    content: "";
-
-    display: inline-block;
-    width: 25px;
-    height: 8px;
-    margin-left: 4px;
-
-    background-image: url("../img/icons/arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
+  @include with-arrow;
 }
 
 .single-collection__basket-link {
