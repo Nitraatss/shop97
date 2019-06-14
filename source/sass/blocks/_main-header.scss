@@ -138,6 +138,7 @@
 
   font-size: 18px;
   line-height: 20px;
+  font-family: $main-font;
   color: #9a9a9a;
 
   background-color: transparent;
@@ -236,9 +237,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 16px;
+  min-width: 20px;
   max-width: 100%;
-  min-height: 16px;
+  min-height: 20px;
   padding: 4px;
 
   font-size: 10px;
@@ -306,7 +307,6 @@
       position: relative;
 
       margin-right: 0;
-
 
       &::before {
         content: "";
@@ -390,7 +390,7 @@
     align-items: flex-start;
     padding: 0;
 
-     > * {
+    > * {
       width: 100%;
       max-width: 100%;
       padding: 0 11px;
