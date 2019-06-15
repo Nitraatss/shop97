@@ -80,6 +80,10 @@
 }
 
 @media screen and (max-width: $tablet-width) {
+  .news {
+    margin-bottom: 90px;
+  }
+
   .news__wrapper {
     padding: 0;
   }
