@@ -41,95 +41,9 @@
   }
 }
 
-.news__article {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
-  max-width: 315px;
-
+.news__news-card {
   &:nth-of-type(2) {
     margin: 0 42.5px;
-
-    .news__picture {
-      height: 270px;
-    }
-  }
-}
-
-.news__picture {
-  position: relative;
-
-  display: block;
-  width: 100%;
-  height: 240px;
-  margin-bottom: 21px;
-}
-
-.news__photo {
-  display: block;
-  width: 100%;
-  height: 100%;
-
-  @include object-fit(cover, center);
-}
-
-.news__date {
-  display: block;
-  max-width: 100%;
-  margin-bottom: 18px;
-
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 30px;
-  word-wrap: break-word;
-}
-
-.news__title {
-  max-width: 100%;
-  margin: 0;
-  margin-bottom: 14px;
-
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 34px;
-  text-transform: uppercase;
-  word-wrap: break-word;
-
-  span {
-    text-transform: none;
-  }
-}
-
-.news__lead {
-  max-width: 100%;
-  margin: 0;
-  margin-bottom: 30px;
-
-  font-size: 14px;
-  line-height: 24px;
-  color: #9a9a9a;
-  word-wrap: break-word;
-}
-
-.news__link {
-  margin-left: auto;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1;
-
-  @include with-arrow;
-
-  &:focus {
-    outline: none;
-  }
-
-  &:hover,
-  &:focus,
-  &:active {
-    opacity: 0.8;
   }
 }
 
@@ -148,7 +62,7 @@
     }
   }
 
-  .news__article {
+  .news__news-card {
     &:nth-of-type(2) {
       margin-right: 0;
       margin-left: 30px;
@@ -157,10 +71,6 @@
     &:nth-of-type(3) {
       display: none;
     }
-  }
-
-  .news__link {
-    margin-left: 0;
   }
 }
 
@@ -175,58 +85,11 @@
     background: none;
   }
 
-  .news__article {
-    position: relative;
-
-    align-items: center;
+  .news__news-card {
     margin-bottom: 46px;
-    padding: 0 11px;
-    padding-top: 40px;
 
     &:nth-of-type(2) {
       margin: 0;
     }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-
-      display: block;
-      width: 100%;
-      height: 250px;
-
-      background-image: url("../img/news-bg-m.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-  }
-
-  .news__date,
-  .news__title,
-  .news__lead {
-    text-align: center;
-  }
-
-  .news__date {
-    margin-bottom: 12px;
-  }
-
-  .news__title {
-    font-size: 20px;
-    line-height: 26px;
-    margin-bottom: 12px;
-    max-width: 256px;
-  }
-
-  .news__lead {
-    margin-bottom: 22px;
-  }
-
-  .news__link {
-    margin: 0 auto;
   }
 }
