@@ -49,6 +49,10 @@
 }
 
 @media screen and (max-width: $desktop-width) {
+  .news {
+    margin-bottom: 98px;
+  }
+
   .news__wrapper {
     max-width: 100%;
     padding: 0 22px;
