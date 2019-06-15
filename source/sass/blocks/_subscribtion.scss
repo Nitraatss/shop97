@@ -1,0 +1,154 @@
+.subscribtion {
+  width: 100%;
+  max-width: 100%;
+}
+
+.subscribtion__wrapper {
+  position: relative;
+
+  width: 100%;
+  max-width: 1200px;
+  min-height: 450px;
+  margin: 0 auto;
+  padding: 100px 15px;
+}
+
+.subscribtion__title {
+  max-width: 400px;
+  margin: 0;
+  margin-bottom: 18px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.subscribtion__feature {
+  max-width: 385px;
+  margin: 0;
+  margin-bottom: 56px;
+
+  font-size: 18px;
+  line-height: 24px;
+  word-wrap: break-word;
+
+  span {
+    text-transform: uppercase;
+  }
+}
+
+.subscribtion__form {
+  position: relative;
+
+  width: 100%;
+  max-width: 270px;
+  margin: 0;
+  padding: 0;
+}
+
+.subscribtion__input {
+  width: 100%;
+  max-width: 100%;
+  height: 46px;
+  padding-right: 74px;
+  padding-left: 20px;
+
+  font-size: 16px;
+  line-height: 36px;
+
+  background-color: #f3f3f1;
+  border: 0;
+  border-radius: 3px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: #b2b2b2;
+  }
+}
+
+.subscribtion__site-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 70px;
+  height: 100%;
+}
+
+.subscribtion__bonus {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  z-index: -1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 818px;
+  height: 100%;
+  padding-left: 84px;
+
+  > * {
+    position: relative;
+    z-index: 4;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &::before {
+    z-index: 2;
+
+    background-color: white;
+    opacity: 0.2;
+  }
+
+  &::after {
+    z-index: 1;
+
+    background-image: url("../img/bonus-d.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.subscribtion__bonus-text {
+  max-width: 100%;
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+
+  span {
+    font-size: 24px;
+  }
+
+  .subscribtion__bonus-value {
+    font-size: 188px;
+    line-height: 1;
+    font-family: $secondary-font;
+    color: rgba(28, 28, 42, 0.102);
+  }
+}
