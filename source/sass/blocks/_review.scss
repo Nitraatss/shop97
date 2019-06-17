@@ -1,12 +1,12 @@
 .review {
   position: relative;
 
+  box-sizing: border-box;
   width: 100%;
   max-width: 372px;
-  padding: 50px 44px;
-  box-sizing: border-box;
-  min-height: 315px;
   height: auto;
+  min-height: 315px;
+  padding: 50px 44px;
 
   border-right: 1px solid rgba(181, 157, 141, 0.2);
 }
@@ -42,8 +42,7 @@
   max-width: 100%;
   margin: 0;
   margin-bottom: 30px;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
 
   font-size: 14px;
   line-height: 24px;
@@ -67,8 +66,8 @@
 @media screen and (max-width: $desktop-width) {
   .review {
     max-width: 50%;
-    padding: 51px 20px;
     min-height: 300px;
+    padding: 51px 20px;
 
     border-right: 1px solid rgba(181, 157, 141, 0.2);
   }
@@ -79,8 +78,8 @@
     position: relative;
 
     max-width: 100%;
-    padding: 31px 20px;
     min-height: 244px;
+    padding: 31px 20px;
 
     border-right: 0;
   }

@@ -24,20 +24,21 @@
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   width: 100%;
   max-width: 100%;
+  height: auto;
 }
 
 .brands__link {
   display: flex;
-  align-items: center;
   justify-content: flex-start;
+  align-items: center;
   min-height: 40px;
   margin: 0;
+  margin-right: 60px;
 
   opacity: 0.5;
-
-  margin-right: 60px;
 
   &:last-of-type {
     margin-right: 0;
@@ -77,8 +78,8 @@
   }
 
   .brands__link {
-    margin-bottom: 30px;
     margin-right: 54px;
+    margin-bottom: 30px;
   }
 }
 
@@ -95,6 +96,7 @@
   .brands__link {
     margin-right: 0;
     margin-bottom: 10px;
+
     transform: scale(0.76);
   }
 }

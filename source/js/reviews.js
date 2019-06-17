@@ -8,8 +8,6 @@ const initiateReviews = () => {
     slidesPerView: 3,
     allowTouchMove: true,
     loop: true,
-    watchSlidesVisibility: true,
-
     breakpoints: {
       767: {
         slidesPerView: 1

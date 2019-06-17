@@ -69,11 +69,6 @@
 
   .reviews__wrapper {
     padding: 0;
-
-    &::before,
-    &::after {
-      width: 22px;
-    }
   }
 
   .reviews__slider {
@@ -81,7 +76,8 @@
     padding-right: 0;
     padding-left: 0;
 
-    &::after {
+    &::after,
+    &::before {
       display: none;
     }
   }
