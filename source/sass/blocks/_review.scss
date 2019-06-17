@@ -2,15 +2,10 @@
   position: relative;
 
   width: 100%;
-  max-width: 359px;
+  max-width: 372px;
   padding: 50px 44px;
 
   border-right: 1px solid rgba(181, 157, 141, 0.2);
-
-  &--active {
-    max-width: 400px;
-    padding: 50px 62px;
-  }
 }
 
 .review__stars {
@@ -70,17 +65,11 @@
     max-width: 50%;
     padding: 51px 20px;
 
+    border-right: 1px solid rgba(181, 157, 141, 0.2);
+
     // Временно
     &:nth-of-type(1) {
       display: none;
-    }
-
-    &--active {
-      max-width: 50%;
-      padding: 51px 20px;
-
-      border-right: 1px solid rgba(181, 157, 141, 0.2);
-      border-left: 0;
     }
   }
 }
@@ -88,6 +77,10 @@
 @media screen and (max-width: $tablet-width) {
   .review {
     position: relative;
+
+    max-width: 100%;
+    padding: 31px 20px;
+    padding-bottom: 42px;
 
     border-right: 0;
 
@@ -98,12 +91,6 @@
 
     &:nth-of-type(3) {
       display: none;
-    }
-
-    &--active {
-      max-width: 100%;
-      padding: 31px 20px;
-      padding-bottom: 42px;
     }
   }
 }

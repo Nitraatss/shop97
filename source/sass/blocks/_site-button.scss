@@ -29,4 +29,10 @@
   &:active {
     opacity: 0.8;
   }
+
+  &--footer {
+    min-height: 36px;
+
+    font-size: 14px;
+  }
 }
