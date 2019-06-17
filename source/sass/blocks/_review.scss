@@ -23,7 +23,7 @@
 .review__star {
   width: 12px;
   height: 11px;
-  margin-right: 14px;
+  margin: 0 7px;
 
   background-image: url("../img/icons/star.svg");
   background-repeat: repeat space;
@@ -82,7 +82,7 @@
 
     max-width: 100%;
     padding: 31px 20px;
-    padding-bottom: 42px;
+    min-height: 244px;
 
     border-right: 0;
 
