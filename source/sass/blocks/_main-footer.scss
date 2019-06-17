@@ -85,3 +85,11 @@
 
   background-color: #1c1c2a;
 }
+
+@media screen and (max-width: 768px) {
+  .main-footer__links {
+    max-width: 768px;
+    padding-left: 22px;
+    padding-right: 46px;
+  }
+}
