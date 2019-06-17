@@ -88,7 +88,7 @@
   background-color: #1c1c2a;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $desktop-width) {
   .main-footer__links {
     max-width: 768px;
     padding-right: 46px;
@@ -96,7 +96,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $tablet-width) {
   .main-footer {
     padding-top: 44px;
   }

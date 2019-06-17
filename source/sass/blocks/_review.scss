@@ -5,7 +5,7 @@
   width: 100%;
   max-width: 372px;
   height: auto;
-  min-height: 315px;
+  min-height: 295px;
   padding: 50px 44px;
 
   border-right: 1px solid rgba(181, 157, 141, 0.2);
@@ -66,7 +66,7 @@
 @media screen and (max-width: $desktop-width) {
   .review {
     max-width: 50%;
-    min-height: 300px;
+    min-height: 280px;
     padding: 51px 20px;
 
     border-right: 1px solid rgba(181, 157, 141, 0.2);
@@ -78,8 +78,9 @@
     position: relative;
 
     max-width: 100%;
-    min-height: 244px;
+    min-height: 224px;
     padding: 31px 20px;
+    padding-bottom: 18px;
 
     border-right: 0;
   }

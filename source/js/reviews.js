@@ -3,7 +3,7 @@ const initiateReviews = () => {
   const reviewsSlider = reviews.querySelector(`.reviews__slider`);
   const pagination = reviews.querySelector(`.swiper-pagination`);
 
-  const reviewsWiper = new Swiper(reviewsSlider, {
+  const reviewsSwiper = new Swiper(reviewsSlider, {
     direction: `horizontal`,
     slidesPerView: 3,
     allowTouchMove: true,
