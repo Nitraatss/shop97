@@ -5,12 +5,11 @@
   max-width: 359px;
   padding: 50px 44px;
 
+  border-right: 1px solid rgba(181, 157, 141, 0.2);
+
   &--active {
     max-width: 400px;
     padding: 50px 62px;
-
-    border-right: 1px solid rgba(181, 157, 141, 0.2);
-    border-left: 1px solid rgba(181, 157, 141, 0.2);
   }
 }
 
@@ -90,6 +89,8 @@
   .review {
     position: relative;
 
+    border-right: 0;
+
     // Временно
     &:nth-of-type(1) {
       display: none;
@@ -103,8 +104,6 @@
       max-width: 100%;
       padding: 31px 20px;
       padding-bottom: 42px;
-
-      border-right: 0;
     }
   }
 }

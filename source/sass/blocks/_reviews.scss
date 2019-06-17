@@ -11,6 +11,8 @@
 }
 
 .reviews__slider {
+  position: relative;
+
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
@@ -20,6 +22,19 @@
   padding: 10px 27px;
 
   background-color: #f3f3f1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: block;
+    width: 30px;
+    height: 100%;
+
+    background-color: #f3f3f1;
+  }
 }
 
 @media screen and (max-width: $desktop-width) {
@@ -42,7 +57,11 @@
 
   .reviews__slider {
     max-width: 320px;
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
+
+    &::after {
+      display: none;
+    }
   }
 }
