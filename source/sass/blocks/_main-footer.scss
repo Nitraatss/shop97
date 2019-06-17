@@ -52,6 +52,8 @@
 .main-footer__link {
   font-size: 14px;
   line-height: 1;
+  max-width: 100%;
+  word-wrap: break-word;
   color: #9a9a9a;
   text-decoration: underline;
 
