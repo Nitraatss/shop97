@@ -14,27 +14,34 @@
 .reviews__slider {
   position: relative;
 
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
   width: 100%;
   max-width: 100%;
   margin-bottom: 26px;
+
   padding: 10px 27px;
 
   background-color: #f3f3f1;
 
+  &::before,
   &::after {
     content: "";
     position: absolute;
     top: 0;
-    right: 0;
+    z-index: 30;
 
     display: block;
     width: 30px;
     height: 100%;
 
     background-color: #f3f3f1;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
   }
 }
 
@@ -62,6 +69,11 @@
 
   .reviews__wrapper {
     padding: 0;
+
+    &::before,
+    &::after {
+      width: 22px;
+    }
   }
 
   .reviews__slider {

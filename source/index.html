@@ -17,6 +17,11 @@
     <link rel="preload" href="./fonts/ptserif-regular.woff2" as="font" />
     <link rel="preload" href="./fonts/ptserif-bold.woff2" as="font" />
     <link rel="preload" href="./fonts/yesevaone.woff2" as="font" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/swiper/swiper.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="./css/style.min.css" />
   </head>
 
@@ -1291,67 +1296,59 @@
             </p>
           </div>
 
-          <div class="reviews__slider">
-            <div class="reviews__review review">
-              <div class="review__stars">
-                <span class="visually-hidden">Оценка - 5 звёзд</span>
-                <span class="review__star"></span>
-                <span class="review__star"></span>
-                <span class="review__star"></span>
-                <span class="review__star"></span>
-                <span class="review__star"></span>
+          <div class="reviews__slider swiper-container">
+            <div class="swiper-wrapper">
+              <div class="reviews__review review swiper-slide">
+                <div class="review__stars">
+                  <span class="visually-hidden">Оценка - 5 звёзд</span>
+                  <span class="review__star"></span>
+                  <span class="review__star"></span>
+                  <span class="review__star"></span>
+                  <span class="review__star"></span>
+                  <span class="review__star"></span>
+                </div>
+                <blockquote class="review__quote">
+                  Все очень понравилось! Быстрое оформление заказа, выбор
+                  удобного времени доставки. Грамотные и отзывчивые операторы.
+                  Всембольшое спасибо!
+                </blockquote>
+                <span class="review__author">Марина</span>
               </div>
-              <blockquote class="review__quote">
-                Все очень понравилось! Быстрое оформление заказа, выбор удобного
-                времени доставки. Грамотные и отзывчивые операторы. Всембольшое
-                спасибо!
-              </blockquote>
-              <span class="review__author">Марина</span>
-            </div>
-            <div class="reviews__review review review--active">
-              <div class="review__stars">
-                <span class="visually-hidden">Оценка - 5 звёзд</span>
-                <span class="review__star"></span>
-                <span class="review__star"></span>
-                <span class="review__star"></span>
-                <span class="review__star"></span>
-                <span class="review__star"></span>
+              <div class="reviews__review review swiper-slide">
+                <div class="review__stars">
+                  <span class="visually-hidden">Оценка - 5 звёзд</span>
+                  <span class="review__star"></span>
+                  <span class="review__star"></span>
+                  <span class="review__star"></span>
+                  <span class="review__star"></span>
+                  <span class="review__star"></span>
+                </div>
+                <blockquote class="review__quote">
+                  Внимательные консультанты. Вежливые. Пункт самовывоза
+                  находится рядом с метро.Естьвозможность примерки. С примеркой
+                  не торопят. Советуют.
+                </blockquote>
+                <span class="review__author">Светлана</span>
               </div>
-              <blockquote class="review__quote">
-                Внимательные консультанты. Вежливые. Пункт самовывоза находится
-                рядом с метро.Естьвозможность примерки. С примеркой не торопят.
-                Советуют.
-              </blockquote>
-              <span class="review__author">Светлана</span>
-            </div>
-            <div class="reviews__review review">
-              <div class="review__stars">
-                <span class="visually-hidden">Оценка - 5 звёзд</span>
-                <span class="review__star"></span>
-                <span class="review__star"></span>
-                <span class="review__star"></span>
-                <span class="review__star"></span>
-                <span class="review__star"></span>
+              <div class="reviews__review review swiper-slide">
+                <div class="review__stars">
+                  <span class="visually-hidden">Оценка - 5 звёзд</span>
+                  <span class="review__star"></span>
+                  <span class="review__star"></span>
+                  <span class="review__star"></span>
+                  <span class="review__star"></span>
+                  <span class="review__star"></span>
+                </div>
+                <blockquote class="review__quote">
+                  Удобный поиск, выбор на любой вкус и достаток, конкурентная
+                  цена, хорошие скидки, возможность оплаты покупки бонусами на
+                  100 %, быстрая доставка.
+                </blockquote>
+                <span class="review__author">Ольга</span>
               </div>
-              <blockquote class="review__quote">
-                Удобный поиск, выбор на любой вкус и достаток, конкурентная
-                цена, хорошие скидки, возможность оплаты покупки бонусами на 100
-                %, быстрая доставка.
-              </blockquote>
-              <span class="review__author">Ольга</span>
             </div>
           </div>
-
-          <div class="reviews__bullets bullets">
-            <button
-              class="bullets__button bullets__button--active"
-              type="button"
-            >
-              Перключатель
-            </button>
-            <button class="bullets__button" type="button">Перключатель</button>
-            <button class="bullets__button" type="button">Перключатель</button>
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
     </main>
@@ -1438,6 +1435,7 @@
 
     <script src="./assets/object-fit-polyfill/ofi.min.js"></script>
     <script src="./assets/picture-polyfill/picturefill.min.js"></script>
+    <script src="./assets/swiper/swiper.min.js"></script>
     <script src="./js/index.min.js"></script>
   </body>
 </html>
