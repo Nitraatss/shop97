@@ -1,1 +1,3 @@
-console.log(`wow`);
+import initiateMenu from "./menu";
+
+initiateMenu();

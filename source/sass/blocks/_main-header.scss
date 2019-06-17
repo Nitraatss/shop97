@@ -231,6 +231,19 @@
   background-image: url("../img/icons/bag-dark.png");
 }
 
+.main-header__search,
+.main-header__bag {
+  &:focus {
+    outline: none;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+}
+
 .main-header__items-number {
   position: absolute;
   bottom: 100%;
@@ -495,6 +508,8 @@
     }
 
     &--active {
+      background: none;
+
       &::before,
       &::after {
         content: "";
