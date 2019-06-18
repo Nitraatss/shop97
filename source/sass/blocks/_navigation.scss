@@ -264,6 +264,18 @@
   padding-bottom: 35px;
 
   background-color: #f8f8f8;
+
+  a {
+    &:focus {
+      outline: none;
+    }
+
+    &:focus,
+    &:hover,
+    &:active {
+      opacity: 0.8;
+    }
+  }
 }
 
 .navigation__stock-image {
