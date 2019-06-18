@@ -46,6 +46,15 @@ const initiateMenu = () => {
 
     hideNavigations();
   });
+
+  document.addEventListener(`keydown`, (evt) => {
+    if (evt.keyCode === 27) {
+      burger.classList.remove(`main-header__burger--active`);
+      mainHeaderTop.classList.remove(`main-header__top--active`);
+
+      hideNavigations();
+    }
+  });
 };
 
 export default initiateMenu;
