@@ -10,17 +10,14 @@ const initiateTopOffers = () => {
     slidesPerView: 1,
     allowTouchMove: true,
     loop: true,
+    navigation: {
+      nextEl: buttonNext,
+      prevEl: buttonPrevious
+    },
     pagination: {
       el: pagination,
       type: `fraction`
     }
-  });
-
-  buttonNext.addEventListener(`click`, () => {
-    topOffersSwiper.slideNext();
-  });
-  buttonPrevious.addEventListener(`click`, () => {
-    topOffersSwiper.slidePrev();
   });
 };
 
