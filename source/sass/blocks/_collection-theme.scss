@@ -90,7 +90,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100%;
+  min-height: 415px;
 
   background-color: rgba(255, 255, 255, 0.75);
 }
@@ -159,6 +159,10 @@
 
   .collection-theme__stock {
     min-height: 260px;
+  }
+
+  .collection-theme__stock-info {
+    min-height: 230px;
   }
 
   .collection-theme__stock-feature {
