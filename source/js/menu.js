@@ -40,13 +40,6 @@ const initiateMenu = () => {
     hideNavigations();
   });
 
-  window.addEventListener(`resize`, () => {
-    burger.classList.remove(`main-header__burger--active`);
-    mainHeaderTop.classList.remove(`main-header__top--active`);
-
-    hideNavigations();
-  });
-
   document.addEventListener(`keydown`, (evt) => {
     if (evt.keyCode === 27) {
       burger.classList.remove(`main-header__burger--active`);
