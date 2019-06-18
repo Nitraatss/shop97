@@ -419,11 +419,17 @@
     margin-bottom: 52px;
 
     &--category {
-      display: none;
+      flex-basis: 100%;
+      margin-right: 0;
     }
 
     &--brands {
       flex-basis: 100%;
+
+      .navigation__column-title {
+        border-top: 1px solid #eef0f0;
+        padding-top: 21px;
+      }
     }
   }
 
