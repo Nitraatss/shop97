@@ -106,7 +106,7 @@
   width: 100%;
   max-width: 818px;
   min-height: 450px;
-  padding-left: 84px;
+  padding: 84px;
 
   background-image: url("../img/bonus-d.jpg");
   background-repeat: no-repeat;
@@ -189,8 +189,7 @@
     flex: 1;
     justify-content: flex-end;
     max-width: none;
-    padding-bottom: 48px;
-    padding-left: 48px;
+    padding: 48px;
 
     background-image: url("../img/bonus-t.jpg");
   }
