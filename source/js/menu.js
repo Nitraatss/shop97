@@ -19,7 +19,7 @@ const initiateMenu = () => {
 
   togglers.forEach((toggler, index) => {
     toggler.addEventListener(`click`, () => {
-      if (!toggler.classList.value.includes(`main-header__toggler--active`)) {
+      if (!toggler.classList.contains(`main-header__toggler--active`)) {
         hideNavigations();
 
         toggler.classList.add(`main-header__toggler--active`);
